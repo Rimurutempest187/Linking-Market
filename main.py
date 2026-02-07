@@ -38,7 +38,7 @@ from telegram.ext import (
 # ---------- CONFIG ----------
 # Replace BOT_TOKEN and ADMIN_ID (or set BOT_TOKEN env var / .env)
 BOT_TOKEN = os.getenv("BOT_TOKEN") 
-ADMIN_ID = int(os.getenv("ADMIN_ID") # <-- change to your Telegram ID
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))  # put your Telegram ID in env
 DB_FILE = "bot.db"
 PHOTOS_DIR = "photos"
 FEE = 5000  # subscription fee in MMK
