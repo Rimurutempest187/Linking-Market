@@ -34,7 +34,8 @@ from telegram.ext import (
     ConversationHandler,
     CallbackQueryHandler,
 )
-
+from dotenv import load_dotenv
+load_dotenv()
 # ---------- CONFIG ----------
 # Replace BOT_TOKEN and ADMIN_ID (or set BOT_TOKEN env var / .env)
 BOT_TOKEN = os.getenv("BOT_TOKEN") 
